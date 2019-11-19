@@ -1,3 +1,144 @@
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+FONTS
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+BODY STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffe4d5;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+HEADER STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.header {
+    background-color: white;
+    color: black;
+    padding: 120px;
+    text-align: center;
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+LAYOUT - RESPONSIVE
++*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+5 COLUMNS TURNING INTO 5 ROWS
+if device is smaller than 600px
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+NAVIGATION MENU RESPONSIVE
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+when device turns from desktop to mobile
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+@media screen and (max-width: 600px) {
+    .button {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.content {
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.topics-wrapper {
+    background-color: lightgray;
+    padding: 10vw;
+    text-align: center;
+    color: black;
+}
+
+.arts-category,
+.music-category,
+.lifestyle-category,
+.fashion-category {
+    background-color: whitesmoke;
+}
+
+.music-category {
+  transform: rotate(-90deg);
+}
+
+.lifestyle.category {
+    transform: rotate(-30deg);
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.maincats {
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+HEADER STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.about-description {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+
+/*
 body {
     background-color: beige;
 }
@@ -24,3 +165,4 @@ article {
     grid-area: article;
     background-color: white;
 }
+*/
