@@ -1,0 +1,26 @@
+body {
+    background-color: beige;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside article aside"
+        "footer footer footer";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+h1 {
+    font-family: "Avenir Next";
+    font-weight: 300;
+    color: black;
+    background-color: #eaeaea;
+}
+h1:hover {
+    color: darkblue;
+}
+article {
+    grid-area: article;
+    background-color: white;
+}

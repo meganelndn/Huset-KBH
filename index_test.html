@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Home page</title>
+
+    <!- INSERT FAVICON CODE HERE -->
+
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>My Niche Web-App</h1>
+    <form action="search.html">
+        <input name="search" type="search">
+        <input type="submit" value="search">
+    </form>
+    <nav>
+        <a href="index.html">See everything</a>
+    </nav>
+    <section id="movies"></section>
+    <template class="movieTemplate">
+        <article>
+            <header>
+                <a href="sub.html?id">
+                    <h1>TITLE GOES HERE</h1>
+                </a>
+                <p>by <span class="movie_director"></span></p>
+                <img src="" alt="" class="poster">
+            </header>
+            <section class="body_copy">BODY COPY GOES HERE</section>
+        </article>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
