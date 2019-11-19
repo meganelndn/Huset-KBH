@@ -43,7 +43,6 @@ h3 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-
 }
 
 
@@ -51,10 +50,25 @@ p {
 HEADER STYLING
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .header {
-    background-color: white;
+    background-color: #ffe4d5;
     color: black;
     padding: 120px;
     text-align: center;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+PARAGRAPH STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+.description,
+.event_date {
+    color: black;
+    text-align: justify;
+    padding: 30px 350px;
+}
+
+.event_date {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 
@@ -98,26 +112,24 @@ when device turns from desktop to mobile
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .topics-wrapper {
-    background-color: lightgray;
+    background-color: #ffe4d5;
     padding: 10vw;
     text-align: center;
     color: black;
 }
 
-.arts-category,
-.music-category,
-.lifestyle-category,
-.fashion-category {
-    background-color: whitesmoke;
+h2 a {
+    color: black;
+}
+
+h2 a:hover {
+    color: white;
 }
 
 .music-category {
-  transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
-.lifestyle.category {
-    transform: rotate(-30deg);
-}
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
@@ -130,8 +142,12 @@ when device turns from desktop to mobile
 }
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-HEADER STYLING
+FOOTER STYLING
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+footer {
+    background-color: white;
+}
+
 .about-description {
     font-family: "Montserrat", sans-serif;
     color: black;
