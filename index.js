@@ -27,7 +27,7 @@ function getNavigation() {
     fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/categories?per_page=100")
         .then(res => res.json())
         .then(data => {
-            // console.log("get nav", data)
+            //console.log("get nav", data)
             data.forEach(addLink)
         })
 }
@@ -68,21 +68,36 @@ function getCategoryData(catId) {
 }
 
 function getSinglePost(singlePostid) {
+<<<<<<< HEAD
     console.log("single post:", singlePostid)
     //const urlParams = new URLSearchParams(window.location.search);
     //const id = urlParams.get("id");
+=======
+    console.log("single post: ", singlePostid)
+    //const urlParams = new URLSearchParams(window.location.search);
+    //const search = urlParams.get("search");
+>>>>>>> first_remote/megane
 
     fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/art/" + singlePostid)
         .then(res => res.json())
         .then(showPost)
+<<<<<<< HEAD
+=======
+
+    //function showPost(post) {
+      //  document.querySelector("article h1").textContent = post.title.rendered
+    //}
+>>>>>>> first_remote/megane
 }
 
 function handleData(myData) {
+
+    console.log(myData)
     myData.forEach(showPost)
 }
 
 function showPost(post) {
-    console.log("displaying post: ",post)
+    console.log("displaying post: ", post)
     const copiesContainer = document.querySelector('#templateCopiesContainer');
     const myTemplate = document.querySelector('.podTemplate').content;
     let myCopy = myTemplate.cloneNode(true);
@@ -99,10 +114,17 @@ function showPost(post) {
 
     const urlParams = new URLSearchParams(window.location.search);
     if(urlParams.get("id")) {
+<<<<<<< HEAD
     // get the event date
     let eventDate = myCopy.querySelector(".event_date_container");
     eventDate.innerHTML = post.date;
     eventDate.classList.add("event_date");
+=======
+        // get the event date
+        let eventDate = myCopy.querySelector("#event_date_container");
+        eventDate.innerHTML = post.date;
+        eventDate.classList.add("event_date");
+>>>>>>> first_remote/megane
     }
 
     copiesContainer.appendChild(myCopy);
