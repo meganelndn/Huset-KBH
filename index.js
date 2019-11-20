@@ -12,7 +12,7 @@ function init() {
     if (search) { //if search has a value
         getSearchData();
     } else if (id) { //if id has a value
-        getSingleArt();
+        getSinglePost(id);
     } else if (category) {
         //category stuff
 
@@ -67,17 +67,14 @@ function getCategoryData(catId) {
         .then(handleData)
 }
 
-function getSingleBook() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get("id");
+function getSinglePost(singlePostid) {
+    console.log("single post:", singlePostid)
+    //const urlParams = new URLSearchParams(window.location.search);
+    //const id = urlParams.get("id");
 
-    fetch("http://georgianadancu.com/wp-json/wp/v2/book/" + id)
+    fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/art/" + singlePostid)
         .then(res => res.json())
-        .then(showBook)
-
-    function showBook(book) {
-        document.querySelector("article h1").textContent = book.title.rendered
-    }
+        .then(showPost)
 }
 
 function handleData(myData) {
@@ -94,12 +91,19 @@ function showPost(post) {
     //get h1 for each post
     let h1 = myCopy.querySelector("h1");
     h1.textContent = post.title.rendered;
+    let a = myCopy.querySelector(".event-link");
+    a.setAttribute("href", "archive.html?id=" + post.id)
     // get p = content for each post
     let description = myCopy.querySelector(".description");
     description.innerHTML = post.content.rendered;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.get("id")) {
     // get the event date
-    let eventDate = myCopy.querySelector(".event_date");
+    let eventDate = myCopy.querySelector(".event_date_container");
     eventDate.innerHTML = post.date;
+    eventDate.classList.add("event_date");
+    }
 
     copiesContainer.appendChild(myCopy);
 }
