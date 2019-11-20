@@ -44,6 +44,36 @@ p {
 }
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+LOGOS
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+**/
+.logo-left {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+ARTS PAGE GRID
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+.pod-item-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+*/
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+IMAGES
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+img {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 NAVIGATION
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 nav ul li {
@@ -57,7 +87,6 @@ HEADER STYLING
 .header {
     background-color: #f7f2f2;
     color: black;
-    padding: 120px;
     text-align: center;
 }
 
@@ -85,7 +114,7 @@ PARAGRAPH STYLING
 .event_date {
     color: black;
     text-align: justify;
-    padding: 30px 350px;
+    margin: 30px 350px;
 }
 
 .event_date {
