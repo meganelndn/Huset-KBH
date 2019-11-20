@@ -45,15 +45,41 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+NAVIGATION
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+nav ul li {
+    display: flex;
+    float: right;
+}
+.nav-link {
+    margin: 1em;
+}
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 HEADER STYLING
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .header {
-    background-color: #ffe4d5;
+    background-color: #f7f2f2;
     color: black;
     padding: 120px;
     text-align: center;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+HEADING IMAGES
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+.heading-img-1,
+.heading-img-2,
+.heading-img-4 {
+    height: auto;
+    width: 300px;
+}
+
+.heading-img-3,
+.heading-img-5 {
+    height: 300px;
+    width: auto;
 }
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
@@ -75,28 +101,14 @@ PARAGRAPH STYLING
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 LAYOUT - RESPONSIVE
 +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-5 COLUMNS TURNING INTO 5 ROWS
-if device is smaller than 600px
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-
-/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-NAVIGATION MENU RESPONSIVE
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 when device turns from desktop to mobile
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-@media screen and (max-width: 600px) {
-    .button {
+@media screen and (max-width:600px) {
+    .description {
         width: 100%;
-        display: block;
-        margin-bottom: 10px;
     }
 }
+
 
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
@@ -112,10 +124,15 @@ when device turns from desktop to mobile
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .topics-wrapper {
-    background-color: #ffe4d5;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    background-color: #f4f2f2;
     padding: 10vw;
     text-align: center;
     color: black;
+    text-align: justify;
 }
 
 h2 a {
@@ -124,21 +141,6 @@ h2 a {
 
 h2 a:hover {
     color: white;
-}
-
-.music-category {
-    transform: rotate(-90deg);
-}
-
-
-/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-.maincats {
-    text-align: justify;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
 }
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
