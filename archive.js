@@ -11,12 +11,12 @@ function fetchJson() {
     console.log(search)
 
 
-    fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/"+search)
-           .then(res=>res.json())
-           .then(data=>{
-        console.log(data);
-        data.forEach(showEachPost);
-       });
+    fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/" + search)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(showEachPost);
+        });
 }
 
 function showEachPost(e) {
@@ -37,4 +37,8 @@ function showEachPost(e) {
     eventDate.innerHTML = e.date;
 
     copiesContainer.appendChild(myCopy);
+}
+
+function showSinglePost() {
+
 }

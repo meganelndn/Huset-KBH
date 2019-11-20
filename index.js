@@ -48,7 +48,7 @@ function getSearchData() {
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
 
-    fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/book?_embed&search=" + search)
+    fetch("http://georgianadancu.com/wordpress/wp-json/wp/v2/art?_embed&search=" + search)
         .then(res => res.json())
         .then(handleData)
 }
